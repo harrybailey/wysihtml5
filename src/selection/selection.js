@@ -182,7 +182,7 @@
       if (caretPlaceholder) {
         newRange = rangy.createRange(this.doc);
         nextSibling = caretPlaceholder.nextSibling;
-        // Opera is so fucked up when you wanna set focus before a <br>
+        // Opera is so messed up when you wanna set focus before a <br>
         if (wysihtml5.browser.hasInsertNodeIssue() && nextSibling && nextSibling.nodeName === "BR") {
           newCaretPlaceholder = this.doc.createTextNode(wysihtml5.INVISIBLE_SPACE);
           dom.insert(newCaretPlaceholder).after(caretPlaceholder);
